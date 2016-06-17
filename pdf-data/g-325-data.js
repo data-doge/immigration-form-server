@@ -4,6 +4,7 @@ module.exports = {
   cipher: {
     first_name: 'form1[0].#subform[0].FirstName[0]',
     middle_name: 'form1[0].#subform[0].MiddleName[0]',
-    last_name: 'form1[0].#subform[0].FamilyName[0]'
+    last_name: 'form1[0].#subform[0].FamilyName[0]',
+    fathers_family_name: 'form1[0].#subform[0].Father_FamilyName[0]'
   }
 }

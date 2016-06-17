@@ -16,6 +16,4 @@ function populatePDFs (commonFieldData) {
   })
 }
 
-
-
 module.exports = populatePDFs
