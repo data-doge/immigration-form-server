@@ -1,19 +1,31 @@
 var pdfFiller = require('pdffiller')
 var each = require('lodash.foreach')
 var pdfDataArray = require('./pdf-data')
+var shortid = require('shortid')
+var Q = require('q')
+
+function populatePDF (pdfData, commonFieldData) {
+  var customFieldData = {}
+  each(pdfData.cipher, function (specificFieldName, commonFieldName) {
+    customFieldData[specificFieldName] = commonFieldData[commonFieldName]
+  })
+
+  var deferred = Q.defer()
+  var filePath = pdfData.name + '__' + shortid.generate() + '.pdf'
+
+  pdfFiller.fillForm(pdfData.sourcePath, filePath, customFieldData, function (err) {
+    if (err) throw err
+    deferred.resolve(filePath)
+  })
+
+  return deferred.promise
+}
 
 function populatePDFs (commonFieldData) {
-  pdfDataArray.forEach(function (pdfData) {
-    var customFieldData = {}
-    each(pdfData.cipher, function (specificFieldName, commonFieldName) {
-      customFieldData[specificFieldName] = commonFieldData[commonFieldName]
-    })
-
-    pdfFiller.fillForm(pdfData.sourcePath, pdfData.destinationPath, customFieldData, function (err) {
-      if (err) throw err
-      console.log(pdfData.destinationPath + ' created ~~')
-    })
+  var promises = pdfDataArray.map(function (pdfData) {
+    return populatePDF(pdfData, commonFieldData)
   })
+  return Q.all(promises)
 }
 
 module.exports = populatePDFs

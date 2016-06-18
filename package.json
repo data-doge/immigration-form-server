@@ -21,7 +21,12 @@
     "body-parser": "^1.15.1",
     "cors": "^2.7.1",
     "express": "^4.13.4",
+    "express-zip": "git://github.com/data-doge/express-zip.git",
     "lodash.foreach": "^4.3.0",
-    "pdffiller": "^0.3.0"
+    "map-obj": "^1.0.1",
+    "pdffiller": "^0.3.0",
+    "q": "^1.4.1",
+    "remove": "^0.1.5",
+    "shortid": "^2.2.6"
   }
 }

@@ -1,6 +1,6 @@
 module.exports = {
+  name: 'i-485',
   sourcePath: './pdf-data/blank-pdfs/i-485-jane-blank.pdf',
-  destinationPath: './auto-populated-pdfs/i-485-jane-auto-populated.pdf',
   cipher: {
     first_name: 'form1[0].#subform[0].GivenNameFirstName[0]',
     middle_name: 'form1[0].#subform[0].MiddleName[0]',
