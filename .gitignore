@@ -39,3 +39,5 @@ jspm_packages
 notes.md
 
 /example-pdfs
+
+/public/bundle.js

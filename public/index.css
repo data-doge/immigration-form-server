@@ -1,0 +1,23 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  font-weight: inherit;
+}
+
+#client-form input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 2px;
+}

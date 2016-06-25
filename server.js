@@ -8,6 +8,7 @@ var fs = require('fs')
 var server = express()
 server.use(bodyParser.json())
 server.use(cors())
+server.use(express.static('public'));
 
 server.post('/process', function (req, res) {
   var fieldData = req.body
