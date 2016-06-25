@@ -1,6 +1,6 @@
 module.exports = {
   name: 'g-325',
-  sourcePath: './pdf-data/blank-pdfs/g-325-jane-beneficiary-blank.pdf',
+  sourcePath: './pdf-data/g-325.pdf',
   cipher: {
     first_name: 'form1[0].#subform[0].FirstName[0]',
     middle_name: 'form1[0].#subform[0].MiddleName[0]',
