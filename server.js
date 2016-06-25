@@ -11,14 +11,14 @@ server.use(cors())
 
 server.post('/process', function (req, res) {
   var fieldData = req.body
-  
+
   populatePDFs(fieldData).then(function (filePaths) {
     var files = filePaths.map(function (filePath) {
       return {path: filePath, name: filePath}
     })
 
     res.zip(files, function () {
-      filePaths.forEach(fs.unlink)
+      filePaths.forEach(fs.unlinkSync)
     })
   })
 })
