@@ -13,11 +13,51 @@ h1 {
   font-weight: inherit;
 }
 
-#client-form input {
+.form-field {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
   width: 200px;
   text-align: center;
   padding: 2px;
+}
+
+.shrug-emoji {
+  display: inline-block;
+  margin: 0 15px;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+#submit-btn {
+  cursor: pointer;
+  background-color: rgba(33,120,108,0.7);
+  margin-top: 10px;
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: 0;
+  color: #FFFBF1;
+  font-weight: lighter;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  transition: 0.5s;
+}
+
+#submit-btn:hover {
+  background-color: rgba(33,120,108,0.5);
+}
+
+.vertalign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
