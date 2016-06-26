@@ -26,8 +26,10 @@
   "homepage": "https://github.com/data-doge/immigration-form-server#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
+    "browserify": "^13.0.1",
     "cors": "^2.7.1",
     "downloadjs": "^1.4.4",
+    "envify": "^3.4.1",
     "express": "^4.13.4",
     "express-zip": "^2.0.1",
     "form-to-object": "^5.0.0",
@@ -41,9 +43,5 @@
   "engines": {
     "node": "6.2.0",
     "npm": "3.8.9"
-  },
-  "devDependencies": {
-    "browserify": "^13.0.1",
-    "envify": "^3.4.1"
   }
 }
