@@ -6,6 +6,7 @@ var config = require('./../config')[process.env.NODE_ENV]
 
 $('#client-form').submit(function (e) {
   e.preventDefault()
+  $('#loading-screen').show()
   var data = toObject(this)
   request.post({
     url: config.baseUrl + '/process',
@@ -13,8 +14,10 @@ $('#client-form').submit(function (e) {
     json: true,
     encoding: null
   }, function (err, res, body) {
+    $('#loading-screen').hide()
     if (err) throw err
     var blob = new Blob([res.body], {type: 'octet/stream'})
+    e.target.reset()
     download(blob, 'immigration-forms__' + Date.now() + '.zip', 'application/zip')
   })
 })
