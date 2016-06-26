@@ -15,6 +15,6 @@ $('#client-form').submit(function (e) {
   }, function (err, res, body) {
     if (err) throw err
     var blob = new Blob([res.body], {type: 'octet/stream'})
-    download(blob, 'fuck.zip', 'application/zip')
+    download(blob, 'immigration-forms__' + Date.now() + '.zip', 'application/zip')
   })
 })
