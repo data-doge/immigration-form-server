@@ -2,6 +2,8 @@
 
 [work in progress](https://simple-immigration.herokuapp.com/)
 
+[details](./details.md)
+
 ## install
 
 [download PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/)
