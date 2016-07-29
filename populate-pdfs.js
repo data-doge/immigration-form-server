@@ -6,6 +6,7 @@ var Q = require('q')
 
 function populatePDF (pdfData, commonFieldData) {
   var customFieldData = {}
+
   each(pdfData.cipher, function (fieldNameInPDF, commonFieldName) {
     customFieldData[fieldNameInPDF] = commonFieldData[commonFieldName]
   })
