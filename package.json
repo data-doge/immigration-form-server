@@ -4,10 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "develop": "export NODE_ENV=development; npm start",
+    "develop": "export NODE_ENV=development; npm run bundle && nodemon ./server.js",
     "start": "npm run bundle && node ./server.js",
-    "bundle": "browserify ./public/index.js > ./public/bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "browserify ./public/index.js > ./public/bundle.js"
   },
   "browserify": {
     "transform": [
@@ -43,5 +42,8 @@
   "engines": {
     "node": "6.2.0",
     "npm": "3.8.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
   }
 }
