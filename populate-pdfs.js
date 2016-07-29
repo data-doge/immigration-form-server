@@ -5,16 +5,16 @@ var shortid = require('shortid')
 var Q = require('q')
 
 function populatePDF (pdfData, commonFieldData) {
-  var customFieldData = {}
+  var fieldDataForPDF = {}
 
   each(pdfData.cipher, function (fieldNameInPDF, commonFieldName) {
-    customFieldData[fieldNameInPDF] = commonFieldData[commonFieldName]
+    fieldDataForPDF[fieldNameInPDF] = commonFieldData[commonFieldName]
   })
 
   var deferred = Q.defer()
   var filePath = pdfData.name + '__' + shortid.generate() + '.pdf'
 
-  pdfFiller.fillForm(pdfData.sourcePath, filePath, customFieldData, function (err) {
+  pdfFiller.fillForm(pdfData.sourcePath, filePath, fieldDataForPDF, function (err) {
     if (err) throw err
     deferred.resolve(filePath)
   })
