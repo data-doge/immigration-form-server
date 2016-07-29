@@ -1,4 +1,11 @@
-var i485Data = require('./i-485-beneficiary-data.js')
-var g325Data = require('./g-325-beneficiary-data.js')
+var g325BeneficiaryData = require('./g-325-beneficiary-data.js')
+var i485BeneficiaryData = require('./i-485-beneficiary-data.js')
+var g325PetitionerData = require('./g-325-petitioner-data.js')
+var i130PetitionerData = require('./i-130-petitioner-data.js')
 
-module.exports = [i485Data, g325Data]
+module.exports = [
+  g325BeneficiaryData,
+  i485BeneficiaryData,
+  g325PetitionerData,
+  i130PetitionerData
+]

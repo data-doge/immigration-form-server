@@ -411,7 +411,7 @@ FieldFlags: 8388608
 FieldJustification: Left
 FieldMaxLength: 4
 ---
-FieldType: 
+FieldType:
 FieldName: form1[0].#subform[0].Table1[0]
 FieldFlags: 0
 FieldJustification: Left
@@ -468,7 +468,7 @@ FieldFlags: 8388608
 FieldJustification: Left
 FieldMaxLength: 4
 ---
-FieldType: 
+FieldType:
 FieldName: form1[0].#subform[0].Table2[0]
 FieldFlags: 0
 FieldJustification: Left
@@ -637,7 +637,7 @@ FieldJustification: Left
 ---
 FieldType: Text
 FieldName: form1[0].#subform[0].Table3[0].Row4[1].Table3_Line5_From_Month[0]
-FieldNameAlt: Line 5 Type Month 
+FieldNameAlt: Line 5 Type Month
 FieldFlags: 8388608
 FieldJustification: Left
 FieldMaxLength: 2
@@ -663,7 +663,7 @@ FieldFlags: 8388608
 FieldJustification: Left
 FieldMaxLength: 4
 ---
-FieldType: 
+FieldType:
 FieldName: form1[0].#subform[0].Table3[0]
 FieldFlags: 0
 FieldJustification: Left
@@ -723,7 +723,7 @@ FieldMaxLength: 4
 ---
 FieldType: Text
 FieldName: form1[0].#subform[0].ToMonth[0]
-FieldNameAlt: To Month 
+FieldNameAlt: To Month
 FieldFlags: 8388608
 FieldJustification: Left
 FieldMaxLength: 2
@@ -882,7 +882,7 @@ FieldFlags: 1
 FieldValueDefault: Don't forget to sign!
 FieldJustification: Left
 ---
-FieldType: 
+FieldType:
 FieldName: form1[0]
 FieldFlags: 0
 FieldJustification: Left
