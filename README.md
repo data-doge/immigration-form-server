@@ -16,4 +16,4 @@ npm install
 npm run develop
 ```
 
-browse to http://localhost:9966/
+browse to http://localhost:3000/
