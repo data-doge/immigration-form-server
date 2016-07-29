@@ -4,6 +4,8 @@
 
 ## install
 
+[download PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/)
+
 ```bash
 git clone https://github.com/data-doge/simple-immigration.git
 cd simple-immigration
