@@ -6,8 +6,8 @@ var Q = require('q')
 
 function populatePDF (pdfData, commonFieldData) {
   var customFieldData = {}
-  each(pdfData.cipher, function (specificFieldName, commonFieldName) {
-    customFieldData[specificFieldName] = commonFieldData[commonFieldName]
+  each(pdfData.cipher, function (fieldNameInPDF, commonFieldName) {
+    customFieldData[fieldNameInPDF] = commonFieldData[commonFieldName]
   })
 
   var deferred = Q.defer()
