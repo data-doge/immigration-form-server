@@ -17,7 +17,9 @@ $('#client-form').submit(function (e) {
     $('#loading-screen').hide()
     if (err) throw err
     var blob = new Blob([res.body], {type: 'octet/stream'})
+    // todo: maybe change this
     e.target.reset()
+
     download(blob, 'immigration-forms__' + Date.now() + '.zip', 'application/zip')
   })
 })
