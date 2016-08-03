@@ -6,14 +6,14 @@ these four forms can be found in `./example-pdfs`
 
 ```bash
 example-pdfs
-├── completed-g-325a-beneficiary-data-field-dump.txt
-├── completed-g-325a-beneficiary.pdf
+├── completed-g-325a-foreign-born-national-data-field-dump.txt
+├── completed-g-325a-foreign-born-national.pdf
 ├── completed-g-325a-petitioner-data-field-dump.txt
 ├── completed-g-325a-petitioner.pdf
 ├── completed-i-130-petitioner-data-field-dump.txt
 ├── completed-i-130-petitioner.pdf
-├── completed-i-485-beneficiary-data-field-dump.txt
-└── completed-i-485-beneficiary.pdf
+├── completed-i-485-foreign-born-national-data-field-dump.txt
+└── completed-i-485-foreign-born-national.pdf
 ```
 
 there's a lot of redundant information in these four forms and it's a waste of time to fill the same shit over and over again.
@@ -29,11 +29,11 @@ in `./public/index.html` there's a form with some of these unique fields
 ```html
 <form id="client-form">
   <h2><em>k so u got ur beneficiary shit</em></h2>
-  <input class="form-field" type="text" name="beneficiary_first_name" placeholder="Given Name (First Name)" />
-  <input class="form-field" type="text" name="beneficiary_middle_name" placeholder="Middle Name" />
-  <input class="form-field" type="text" name="beneficiary_last_name" placeholder="Family Name (Last Name)" />
-  <input class="form-field" type="text" name="beneficiary_i_94_number" placeholder="I-94 Arrival-Departure Record Number" />
-  <input class="form-field" type="text" name="beneficiary_fathers_family_name" placeholder="Father's Family Name" />
+  <input class="form-field" type="text" name="foreign_born_national_first_name" placeholder="Given Name (First Name)" />
+  <input class="form-field" type="text" name="foreign_born_national_middle_name" placeholder="Middle Name" />
+  <input class="form-field" type="text" name="foreign_born_national_last_name" placeholder="Family Name (Last Name)" />
+  <input class="form-field" type="text" name="foreign_born_national_i_94_number" placeholder="I-94 Arrival-Departure Record Number" />
+  <input class="form-field" type="text" name="foreign_born_national_fathers_family_name" placeholder="Father's Family Name" />
 
   <h2><em>and then also ur petitioner shit</em></h2>
   <input class="form-field" type="text" name="petitioner_first_name" placeholder="Given Name (First Name)" />
@@ -175,14 +175,14 @@ these mappings can be found in `./pdf-data`
 
 ```bash
 pdf-data
-├── g-325-beneficiary-data.js
-├── g-325-beneficiary.pdf
+├── g-325-foreign-born-national-data.js
+├── g-325-foreign-born-national.pdf
 ├── g-325-petitioner-data.js
 ├── g-325-petitioner.pdf
 ├── i-130-petitioner-data.js
 ├── i-130-petitioner.pdf
-├── i-485-beneficiary-data.js
-├── i-485-beneficiary.pdf
+├── i-485-foreign-born-national-data.js
+├── i-485-foreign-born-national.pdf
 └── index.js
 ```
 
@@ -201,10 +201,10 @@ module.exports = {
     petitioner_middle_name: 'F[0].#subform[0].TextField1[2]',
     petitioner_last_name: 'F[0].#subform[0].TextField1[0]',
     petitioner_ssn: 'F[0].#subform[0].SSN[0]',
-    beneficiary_first_name: 'F[0].#subform[0].TextField1[4]',
-    beneficiary_middle_name: 'F[0].#subform[0].TextField1[5]',
-    beneficiary_last_name: 'F[0].#subform[0].TextField1[3]'
-    // beneficiary_i_94_number: '' holy shit lol so fucked
+    foreign_born_national_first_name: 'F[0].#subform[0].TextField1[4]',
+    foreign_born_national_middle_name: 'F[0].#subform[0].TextField1[5]',
+    foreign_born_national_last_name: 'F[0].#subform[0].TextField1[3]'
+    // foreign_born_national_i_94_number: '' holy shit lol so fucked
   }
 }
 ```
@@ -213,14 +213,14 @@ those fucked up PDF field names can be found in `./example-pdfs`, in the files p
 
 ```bash
 example-pdfs
-├── completed-g-325a-beneficiary-data-field-dump.txt
-├── completed-g-325a-beneficiary.pdf
+├── completed-g-325a-foreign-born-national-data-field-dump.txt
+├── completed-g-325a-foreign-born-national.pdf
 ├── completed-g-325a-petitioner-data-field-dump.txt
 ├── completed-g-325a-petitioner.pdf
 ├── completed-i-130-petitioner-data-field-dump.txt
 ├── completed-i-130-petitioner.pdf
-├── completed-i-485-beneficiary-data-field-dump.txt
-└── completed-i-485-beneficiary.pdf
+├── completed-i-485-foreign-born-national-data-field-dump.txt
+└── completed-i-485-foreign-born-national.pdf
 ```
 
 these files are the result of running
