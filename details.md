@@ -8,10 +8,10 @@ these four forms can be found in `./example-pdfs`
 example-pdfs
 ├── completed-g-325a-foreign-born-national-data-field-dump.txt
 ├── completed-g-325a-foreign-born-national.pdf
-├── completed-g-325a-petitioner-data-field-dump.txt
-├── completed-g-325a-petitioner.pdf
-├── completed-i-130-petitioner-data-field-dump.txt
-├── completed-i-130-petitioner.pdf
+├── completed-g-325a-us-citizen-data-field-dump.txt
+├── completed-g-325a-us-citizen.pdf
+├── completed-i-130-us-citizen-data-field-dump.txt
+├── completed-i-130-us-citizen.pdf
 ├── completed-i-485-foreign-born-national-data-field-dump.txt
 └── completed-i-485-foreign-born-national.pdf
 ```
@@ -36,11 +36,11 @@ in `./public/index.html` there's a form with some of these unique fields
   <input class="form-field" type="text" name="foreign_born_national_fathers_family_name" placeholder="Father's Family Name" />
 
   <h2><em>and then also ur petitioner shit</em></h2>
-  <input class="form-field" type="text" name="petitioner_first_name" placeholder="Given Name (First Name)" />
-  <input class="form-field" type="text" name="petitioner_middle_name" placeholder="Middle Name" />
-  <input class="form-field" type="text" name="petitioner_last_name" placeholder="Family Name (Last Name)" />
-  <input class="form-field" type="text" name="petitioner_ssn" placeholder="Social Security Number (if any)" />
-  <input class="form-field" type="text" name="petitioner_fathers_family_name" placeholder="Father's Family Name" />
+  <input class="form-field" type="text" name="us_citizen_first_name" placeholder="Given Name (First Name)" />
+  <input class="form-field" type="text" name="us_citizen_middle_name" placeholder="Middle Name" />
+  <input class="form-field" type="text" name="us_citizen_last_name" placeholder="Family Name (Last Name)" />
+  <input class="form-field" type="text" name="us_citizen_ssn" placeholder="Social Security Number (if any)" />
+  <input class="form-field" type="text" name="us_citizen_fathers_family_name" placeholder="Father's Family Name" />
 
   <input class="form-field" type="submit" value="OK" id="submit-btn">
 </form>
@@ -177,10 +177,10 @@ these mappings can be found in `./pdf-data`
 pdf-data
 ├── g-325-foreign-born-national-data.js
 ├── g-325-foreign-born-national.pdf
-├── g-325-petitioner-data.js
-├── g-325-petitioner.pdf
-├── i-130-petitioner-data.js
-├── i-130-petitioner.pdf
+├── g-325-us-citizen-data.js
+├── g-325-us-citizen.pdf
+├── i-130-us-citizen-data.js
+├── i-130-us-citizen.pdf
 ├── i-485-foreign-born-national-data.js
 ├── i-485-foreign-born-national.pdf
 └── index.js
@@ -191,16 +191,16 @@ here's an example of one mapping. the commented line is something i can talk abo
 here, `cipher` is an object, where the `key`s are our 'common' names, and the `value`s are our fucked up PDF field names.
 
 ```js
-// i-130-petitioner-data.js
+// i-130-us-citizen-data.js
 
 module.exports = {
-  name: 'i-130-petitioner',
-  sourcePath: './pdf-data/i-130-petitioner.pdf',
+  name: 'i-130-us-citizen',
+  sourcePath: './pdf-data/i-130-us-citizen.pdf',
   cipher: {
-    petitioner_first_name: 'F[0].#subform[0].TextField1[1]',
-    petitioner_middle_name: 'F[0].#subform[0].TextField1[2]',
-    petitioner_last_name: 'F[0].#subform[0].TextField1[0]',
-    petitioner_ssn: 'F[0].#subform[0].SSN[0]',
+    us_citizen_first_name: 'F[0].#subform[0].TextField1[1]',
+    us_citizen_middle_name: 'F[0].#subform[0].TextField1[2]',
+    us_citizen_last_name: 'F[0].#subform[0].TextField1[0]',
+    us_citizen_ssn: 'F[0].#subform[0].SSN[0]',
     foreign_born_national_first_name: 'F[0].#subform[0].TextField1[4]',
     foreign_born_national_middle_name: 'F[0].#subform[0].TextField1[5]',
     foreign_born_national_last_name: 'F[0].#subform[0].TextField1[3]'
@@ -215,10 +215,10 @@ those fucked up PDF field names can be found in `./example-pdfs`, in the files p
 example-pdfs
 ├── completed-g-325a-foreign-born-national-data-field-dump.txt
 ├── completed-g-325a-foreign-born-national.pdf
-├── completed-g-325a-petitioner-data-field-dump.txt
-├── completed-g-325a-petitioner.pdf
-├── completed-i-130-petitioner-data-field-dump.txt
-├── completed-i-130-petitioner.pdf
+├── completed-g-325a-us-citizen-data-field-dump.txt
+├── completed-g-325a-us-citizen.pdf
+├── completed-i-130-us-citizen-data-field-dump.txt
+├── completed-i-130-us-citizen.pdf
 ├── completed-i-485-foreign-born-national-data-field-dump.txt
 └── completed-i-485-foreign-born-national.pdf
 ```
