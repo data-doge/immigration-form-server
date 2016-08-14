@@ -1,0 +1,308 @@
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Gender[0]
+FieldNameAlt: 7. Gender. Check Male.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: M
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Gender[1]
+FieldNameAlt: 7. Gender. Check Female.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: F
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].Date_of_Birth[0]
+FieldNameAlt: 6. Enter Date of Birth as 2-digit Month, 2-digit Day, and 4-digit Year.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Line8_Marital[0]
+FieldNameAlt: 8. Marital Status. Check Married.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: M
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Line8_Marital[1]
+FieldNameAlt: 8. Marital Status. Check Widowed.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: W
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Line8_Marital[2]
+FieldNameAlt: 8. Marital Status. Check Single.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: S
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Line8_Marital[3]
+FieldNameAlt: 8. Marital Status. Check Divorced.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: D
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].applying[0]
+FieldNameAlt: I am applying for: Check Permission to accept employment.
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: A
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].applying[1]
+FieldNameAlt: I am applying for: Check Replacement (of lost employment authorization document).
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: B
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].other_names[0]
+FieldNameAlt: 2. Enter Other Names Used (include Maiden Name).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].apt_number[0]
+FieldNameAlt: 3. U. S. Mailing Address. Enter Apartment Number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].Line3_StreetNumberName[0]
+FieldNameAlt: 3. U. S. Mailing Address. Enter Street Number and Name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].Line3_CityOrTown[0]
+FieldNameAlt: 3. U. S. Mailing Address. Enter Town or City.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: form1[0].#subform[0].Line3_State[0]
+FieldNameAlt: 3. U. S. Mailing Address. State/Country. Select State from a list of States.
+FieldFlags: 67239936
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].Line3_ZipCode[0]
+FieldNameAlt: 3. U. S. Mailing Address. Enter Zip Code.
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 5
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].county_of_citizenship[0]
+FieldNameAlt: 4. Enter Country of Citizenship/Nationality.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].alien_re_number[0]
+FieldNameAlt: 10. Enter Alien Registration Number (A-Number) or I-94 Number, if any.
+FieldFlags: 8388608
+FieldJustification: Left
+FieldMaxLength: 11
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].place_of_birth[0]
+FieldNameAlt: 5. Place of Birth. Enter Town or City, State or Province, and Country.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].ssn_s[0]
+FieldNameAlt: 9. Enter U. S. Social Security Number (Include all numbers you have ever used, if any).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Line11[0]
+FieldNameAlt: 11. Have you ever before applied for employment authorization from U S C I S? Check No. (Proceed to Question 12.)
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: N
+FieldStateOption: Off
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].Line11[1]
+FieldNameAlt: 11. Have you ever before applied for employment authorization from U S C I S? Check Yes. (Complete the following in questions.)
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Y
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].#area[0].ins_office[0]
+FieldNameAlt: 11. Have you ever before applied for employment authorization from U S C I S? If Yes is checked, Enter Which U S C I S Office.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].#area[0].results[0]
+FieldNameAlt: 11. Have you ever before applied for employment authorization from U S C I S? If Yes is Checked, Enter Results (Granted or Denied - attach all documentation).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].#area[0].Date[0]
+FieldNameAlt: 11. Have you ever before applied for employment authorization from U S C I S? If Yes is Checked, Enter Date or Dates as 2-digit Month, 2-digit Day, and 4-digit Year.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].Line1_FamilyName[0]
+FieldNameAlt: 1. Name. Enter Family Name (in CAPS), First Name, and Middle Name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].status[0]
+FieldNameAlt: 15. Enter Current Immigration Status (Visitor, Student, et cetera).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].#area[1].section_1[0]
+FieldNameAlt: 16. Eligibility Category.  Go to the &#8220;Who May File Form I-7 65?&#8221; section of the instructions. In the space below, place the letter and number of the eligibility category you selected from the instructions. (For example, (A)(8), (C)(17)(3), et cetera). Enter First Letter or Number of Eligibility Category.
+FieldFlags: 8388608
+FieldJustification: Center
+FieldMaxLength: 4
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].#area[1].section_2[0]
+FieldNameAlt: 16. Eligibility Category.  Go to the &#8220;Who May File Form I-7 65?&#8221; section of the instructions. In the space below, place the letter and number of the eligibility category you selected from the instructions. (For example, (A)(8), (C)(17)(3), et cetera). Enter Second Letter or Number of Eligibility Category.
+FieldFlags: 8388608
+FieldJustification: Center
+FieldMaxLength: 3
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].#area[1].section_3[0]
+FieldNameAlt: 16. Eligibility Category.  Go to the &#8220;Who May File Form I-7 65?&#8221; section of the instructions. In the space below, place the letter and number of the eligibility category you selected from the instructions. (For example, (A)(8), (C)(17)(3), et cetera). Enter Third Letter or Number of Eligibility Category, if any.
+FieldFlags: 8388608
+FieldJustification: Center
+FieldMaxLength: 4
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].section_1[1]
+FieldNameAlt: 17. (c)(3)(C) Eligibility Category.  If you entered the eligibility category, (C)(3)(C), in Question 16 above, list your degree, your employer's name as listed in E-Verify, and your employer's E-Verify Company Identification Number or a valid E-Verify Client Company Identification Number in the space below. Enter Degree.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].section_1[2]
+FieldNameAlt: 17. (c)(3)(C) Eligibility Category.  If you entered the eligibility category, (C)(3)(C), in Question 16 above, list your degree, your employer's name as listed in E-Verify, and your employer's E-Verify Company Identification Number or a valid E-Verify Client Company Identification Number in the space below. Enter Employer's Name as listed in E-Verify.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].section_1[3]
+FieldNameAlt: 17. (c)(3)(C) Eligibility Category.  If you entered the eligibility category, (C)(3)(C), in Question 16 above, list your degree, your employer's name as listed in E-Verify, and your employer's E-Verify Company Identification Number or a valid E-Verify Client Company Identification Number in the space below. Enter Employer's E-Verify Company Identification Number or a valid E-Verify Client Company Identification Number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].section_1[4]
+FieldNameAlt: 18. (c)(26) Eligibility Category.  If you entered the eligibility category, (c)(26), in Question 16 above and this application is not filed with a Form I-129 and / or Form I-539, please provide the receipt number of your H-1B principal spouse's most recent Form I-797 Notice of Approval for Form I-129. Enter the receipt number of your H-1B principal spouse's most recent Form I-797 Notice of Approval for Form I-129.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: form1[0].#subform[0].applying[2]
+FieldNameAlt: I am applying for: Check Renewal of my permission to accept employment (attach previous employment authorization document).
+FieldFlags: 0
+FieldValue: Off
+FieldJustification: Left
+FieldStateOption: C
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].Date_of_last_entry[0]
+FieldNameAlt: 12. Enter Date of Last Entry into the U. S. as 2-digit Month, 2-digit Day, and 4-digit Year.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].place_entry[0]
+FieldNameAlt: 13. Enter Place of Last Entry into the U. S.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].manner[0]
+FieldNameAlt: 14. Enter Status at Last Entry (B-2 Visitor, F-1 Student, No Lawful Status, et cetera).
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].signature[0]
+FieldNameAlt: Certification. Your Certification:  I certify, under penalty of perjury under the laws of the United States of America, that the foregoing is true and    correct. Furthermore, I authorize the release of any information that U. S. Citizenship and Immigration Services needs to determine eligibility for the benefit I am seeking. I have read the &#8220;Who May File Form I-7 65?&#8221; section of the instructions and have identified the appropriate eligibility category in Question 16. Signature. No Entry. Print and Sign completed form.
+FieldFlags: 8388609
+FieldValueDefault: Don't forget to sign!
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].last_date[0]
+FieldNameAlt: Certification. Enter Date of Signature as 2-digit Month, 2-digit Day, and 4-digit Year.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].telephone4[0]
+FieldNameAlt: Certification. Enter Telephone Number.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].sig2[0]
+FieldNameAlt: Signature of Person Preparing Form, If Other Than Above: I declare that this document was prepared by me at the request of the applicant and is based on all information of which I have any knowledge. Preparer's Signature. No Entry. Print and Sign completed form.
+FieldFlags: 8388609
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].last_date2[0]
+FieldNameAlt: Signature of Person Preparing Form, If Other Than Above: I declare that this document was prepared by me at the request of the applicant and is based on all information of which I have any knowledge. Enter Date of Preparer's Signature as 2-digit Month, 2-digit Day, and 4-digit Year.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].print_name[0]
+FieldNameAlt: Signature of Person Preparing Form, If Other Than Above: I declare that this document was prepared by me at the request of the applicant and is based on all information of which I have any knowledge. Enter Printed Name.
+FieldFlags: 8388608
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: form1[0].#subform[0].last_address[0]
+FieldNameAlt: Signature of Person Preparing Form, If Other Than Above: I declare that this document was prepared by me at the request of the applicant and is based on all information of which I have any knowledge. Enter Address.
+FieldFlags: 8392704
+FieldJustification: Left
+---
+FieldType:
+FieldName: form1[0]
+FieldFlags: 0
+FieldJustification: Left
