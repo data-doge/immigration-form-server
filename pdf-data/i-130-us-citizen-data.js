@@ -8,7 +8,8 @@ module.exports = {
     us_citizen_ssn: 'F[0].#subform[0].SSN[0]',
     foreign_born_national_first_name: 'F[0].#subform[0].TextField1[4]',
     foreign_born_national_middle_name: 'F[0].#subform[0].TextField1[5]',
-    foreign_born_national_last_name: 'F[0].#subform[0].TextField1[3]'
+    foreign_born_national_last_name: 'F[0].#subform[0].TextField1[3]',
+    foreign_born_national_birth_date: 'F[0].#subform[0].Date_of_Birth[1]'
     // foreign_born_national_i_94_number: '' holy shit lol so fucked
   }
 }
