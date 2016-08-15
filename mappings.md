@@ -1,0 +1,16 @@
+A: foreign_born_national_last_name
+B: foreign_born_national_first_name
+C: foreign_born_national_middle_name
+D: shared_us_mailing_address[street_number_and_name]
+E: shared_us_mailing_address[apt_number]
+G: shared_us_mailing_address[town_or_city]
+H: shared_us_mailing_address[state]
+I: shared_us_mailing_address[zip_code]
+L: foreign_born_national_country_of_citizenship_or_nationality
+S: foreign_born_national_place_of_birth[town_or_city]
+J: foreign_born_national_date_of_birth
+M: foreign_born_national_ssn
+N: foreign_born_national_alien_registration_number
+O: foreign_born_national_date_of_last_entry_into_us
+Y: foreign_born_national_status_at_last_entry
+Q: foreign_born_national_current_immigration_status

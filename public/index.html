@@ -7,29 +7,54 @@
     <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="vertalign">
-      <h1><span class="shrug-emoji">ツ</span> fill out ur immigration shit <span class="shrug-emoji">ツ</span></h1>
+    <h1><span class="shrug-emoji">ツ</span> fill out ur immigration shit <span class="shrug-emoji">ツ</span></h1>
 
-      <form id="client-form">
-        <h2><em>k so u got ur foreign born national shit</em></h2>
-        <!--  foreign person -->
-        <input class="form-field" type="text" name="foreign_born_national_first_name" placeholder="Given Name (First Name)" />
-        <input class="form-field" type="text" name="foreign_born_national_middle_name" placeholder="Middle Name" />
-        <input class="form-field" type="text" name="foreign_born_national_last_name" placeholder="Family Name (Last Name)" />
-        <input class="form-field" type="text" name="foreign_born_national_i_94_number" placeholder="I-94 Arrival-Departure Record Number" />
-        <input class="form-field" type="text" name="foreign_born_national_fathers_family_name" placeholder="Father's Family Name" />
+    <form id="client-form">
+      <h2><em>k so u got ur foreign born national shit</em></h2>
+      <!--  foreign person -->
+      <input class="form-field" type="text" name="foreign_born_national_first_name" placeholder="Given Name (First Name)" />
+      <input class="form-field" type="text" name="foreign_born_national_middle_name" placeholder="Middle Name" />
+      <input class="form-field" type="text" name="foreign_born_national_last_name" placeholder="Family Name (Last Name)" />
+      <input class="form-field" type="text" name="foreign_born_national_i_94_number" placeholder="I-94 Arrival-Departure Record Number" />
+      <input class="form-field" type="text" name="foreign_born_national_fathers_family_name" placeholder="Father's Family Name" />
+      <input class="form-field" type="text" name="foreign_born_national_country_of_citizenship_or_nationality" placeholder="Country of Citizenship or Nationality" />
 
-        <h2><em>and then also ur us citizen shit</em></h2>
-        <!-- us citizen -->
-        <input class="form-field" type="text" name="us_citizen_first_name" placeholder="Given Name (First Name)" />
-        <input class="form-field" type="text" name="us_citizen_middle_name" placeholder="Middle Name" />
-        <input class="form-field" type="text" name="us_citizen_last_name" placeholder="Family Name (Last Name)" />
-        <input class="form-field" type="text" name="us_citizen_ssn" placeholder="Social Security Number (if any)" />
-        <input class="form-field" type="text" name="us_citizen_fathers_family_name" placeholder="Father's Family Name" />
+      <div class="form-field-group">
+        <h3><em>us mailing address</em></h3>
 
-        <input class="form-field" type="submit" value="OK" id="submit-btn">
-      </form>
-    </div>
+        <input class="form-field" type="text" name="foreign_born_national_place_of_birth[town_or_city]" placeholder="Town or City" />
+        <input class="form-field" type="text" name="foreign_born_national_place_of_birth[country]" placeholder="Country" />
+      </div>
+
+      <input class="form-field" type="text" name="foreign_born_national_date_of_birth" placeholder="Date of Birth (mm/dd/yyyy)" />
+      <input class="form-field" type="text" name="foreign_born_national_ssn" placeholder="Social Security Number" />
+      <input class="form-field" type="text" name="foreign_born_national_alien_registration_number" placeholder="Alien Registration Number" />
+      <input class="form-field" type="text" name="foreign_born_national_date_of_last_entry_into_us" placeholder="Date of Last Entry into the U.S., on or about (mm/dd/yyyy)" />
+      <input class="form-field" type="text" name="foreign_born_national_status_at_last_entry" placeholder="Status at Last Entry (B-2 visitor, F-1 Student, etc.)" />
+      <input class="form-field" type="text" name="foreign_born_national_current_immigration_status" placeholder="Current Immigration Status (Visitor, Student, etc.)" />
+
+      <h2><em>and then also ur us citizen shit</em></h2>
+      <!-- us citizen -->
+      <input class="form-field" type="text" name="us_citizen_first_name" placeholder="Given Name (First Name)" />
+      <input class="form-field" type="text" name="us_citizen_middle_name" placeholder="Middle Name" />
+      <input class="form-field" type="text" name="us_citizen_last_name" placeholder="Family Name (Last Name)" />
+      <input class="form-field" type="text" name="us_citizen_ssn" placeholder="Social Security Number (if any)" />
+      <input class="form-field" type="text" name="us_citizen_fathers_family_name" placeholder="Father's Family Name" />
+
+      <!--  shared shit -->
+      <h2><em>and then u got ur both of u shit</em></h2>
+
+      <div class="form-field-group">
+        <h3><em>us mailing address</em></h3>
+        <input class="form-field" type="text" name="shared_us_mailing_address[street_number_and_name]" placeholder="Street Number and Name" />
+        <input class="form-field" type="text" name="shared_us_mailing_address[apt_number]" placeholder="Apt. Number" />
+        <input class="form-field" type="text" name="shared_us_mailing_address[town_or_city]" placeholder="Town or City" />
+        <input class="form-field" name="shared_us_mailing_address[state]" placeholder="State" />
+        <input class="form-field" type="text" name="shared_us_mailing_address[zip_code]" placeholder="Zip Code" />
+      </div>
+
+      <input type="submit" value="OK" id="submit-btn">
+    </form>
 
     <div id="loading-screen">
       autofilling and downloading pdfs ...
