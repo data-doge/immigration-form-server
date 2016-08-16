@@ -24,7 +24,7 @@ $('#client-form').submit(function (e) {
   })
 })
 
-if (process.env.NODE_ENV) {
+if (process.env.NODE_ENV === 'development') {
   var sampleData = require('./sample-data')
   var each = require('lodash.foreach')
   var $testBtn = $('<button>fill fields with sample data</button>').css({
