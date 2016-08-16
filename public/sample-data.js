@@ -20,5 +20,13 @@ module.exports = {
   'foreign_born_national_alien_registration_number': 'A-XXXXXXX',
   'foreign_born_national_date_of_last_entry_into_us': moment(faker.date.past()).format('MM/DD/YYYY'),
   'foreign_born_national_status_at_last_entry': sample(['B-2 Visitor', 'F-1 Student', 'No Lawful Status']),
-  'foreign_born_national_current_immigration_status': sample(['Visitor', 'Student'])
+  'foreign_born_national_current_immigration_status': sample(['Visitor', 'Student']),
+  'foreign_born_national_fathers_first_name': faker.name.firstName(),
+  'foreign_born_national_mothers_first_name': faker.name.firstName(),
+  'us_citizen_last_name': faker.name.lastName(),
+  'us_citizen_first_name': faker.name.firstName(),
+  'us_citizen_middle_name': randomLetter().toUpperCase() + '.',
+  'us_citizen_date_of_birth': moment(faker.date.past()).format('MM/DD/YYYY'),
+  'us_citizen_place_of_birth_town_or_city': faker.address.city(),
+  'us_citizen_place_of_birth_country': faker.address.country()
 }

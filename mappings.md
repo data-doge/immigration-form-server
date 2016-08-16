@@ -15,3 +15,10 @@ N: foreign_born_national_alien_registration_number
 O: foreign_born_national_date_of_last_entry_into_us
 Y: foreign_born_national_status_at_last_entry
 Q: foreign_born_national_current_immigration_status
+U: foreign_born_national_mothers_first_name
+V: foreign_born_national_fathers_first_name
+3: us_citizen_last_name
+4: us_citizen_first_name
+6: us_citizen_date_of_birth
+7a: us_citizen_place_of_birth_town_or_city
+7b: us_citizen_place_of_birth_country
