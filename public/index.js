@@ -4,7 +4,6 @@ var toObject = require('form-to-object')
 var download = require('downloadjs')
 var config = require('./../config')[process.env.NODE_ENV]
 require('html5-simple-date-input-polyfill')
-var _ = require('lodash')
 var clone = require('lodash.clone')
 
 $('#client-form').submit(function (e) {
@@ -28,10 +27,9 @@ $('#client-form').submit(function (e) {
   })
 })
 
-<<<<<<< HEAD
 
 function reformatData (unformattedData) {
-  var formattedData = _.clone(unformattedData)
+  var formattedData = clone(unformattedData)
   var birthdate = makeBirthdateFrom(unformattedData)
   formattedData.foreign_born_national_birth_date = birthdate
   return formattedData
@@ -45,7 +43,7 @@ function makeBirthdateFrom (unformattedData) {
     var birthdate = month + "/" + day +  "/" + year
     return birthdate
   }
-=======
+
 if (process.env.NODE_ENV === 'development') {
   var sampleData = require('./sample-data')
   var each = require('lodash.foreach')
@@ -60,4 +58,3 @@ if (process.env.NODE_ENV === 'development') {
   })
   $('body').append($testBtn)
 }
->>>>>>> origin/master
