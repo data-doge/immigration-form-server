@@ -23,3 +23,18 @@ $('#client-form').submit(function (e) {
     download(blob, 'immigration-forms__' + Date.now() + '.zip', 'application/zip')
   })
 })
+
+if (process.env.NODE_ENV) {
+  var sampleData = require('./sample-data')
+  var each = require('lodash.foreach')
+  var $testBtn = $('<button>fill fields with sample data</button>').css({
+    'position': 'absolute',
+    'top': '5px',
+    'left': '5px'
+  }).on('click', function (e) {
+    each(sampleData, function (val, key) {
+      $('input[name="' + key + '"]').val(val)
+    })
+  })
+  $('body').append($testBtn)
+}
