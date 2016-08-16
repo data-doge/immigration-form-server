@@ -28,6 +28,7 @@
     "browserify": "^13.0.1",
     "cors": "^2.7.1",
     "downloadjs": "^1.4.4",
+    "faker": "^3.1.0",
     "envify": "^3.4.1",
     "express": "^4.13.4",
     "express-zip": "^2.0.1",
@@ -35,10 +36,14 @@
     "jquery": "^3.0.0",
     "lodash.clone": "^4.5.0",
     "lodash.foreach": "^4.3.0",
+    "lodash.sample": "^4.2.1",
+    "moment": "^2.14.1",
     "pdffiller": "^0.3.0",
     "q": "^1.4.1",
+    "random-letter": "^1.0.1",
     "request": "^2.72.0",
-    "shortid": "^2.2.6"
+    "shortid": "^2.2.6",
+    "string-just": "0.0.2"
   },
   "engines": {
     "node": "6.2.0",

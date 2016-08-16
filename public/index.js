@@ -28,6 +28,7 @@ $('#client-form').submit(function (e) {
   })
 })
 
+<<<<<<< HEAD
 
 function reformatData (unformattedData) {
   var formattedData = _.clone(unformattedData)
@@ -44,3 +45,19 @@ function makeBirthdateFrom (unformattedData) {
     var birthdate = month + "/" + day +  "/" + year
     return birthdate
   }
+=======
+if (process.env.NODE_ENV === 'development') {
+  var sampleData = require('./sample-data')
+  var each = require('lodash.foreach')
+  var $testBtn = $('<button>fill fields with sample data</button>').css({
+    'position': 'absolute',
+    'top': '5px',
+    'left': '5px'
+  }).on('click', function (e) {
+    each(sampleData, function (val, key) {
+      $('input[name="' + key + '"]').val(val)
+    })
+  })
+  $('body').append($testBtn)
+}
+>>>>>>> origin/master

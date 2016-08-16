@@ -10,7 +10,7 @@ body {
   font-weight: lighter;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: inherit;
 }
 
@@ -18,13 +18,25 @@ h2 {
   font-size: 18px;
 }
 
+h3 {
+  font-size: 15px;
+  margin: 10px auto;
+}
+
 .form-field {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-  width: 200px;
+  width: 300px;
   text-align: center;
   padding: 2px;
+}
+
+.form-field-group {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .shrug-emoji {
@@ -42,8 +54,9 @@ h2 {
 #submit-btn {
   cursor: pointer;
   background-color: rgba(33,120,108,0.7);
+  margin: 0 auto;
   margin-top: 10px;
-  display: inline-block;
+  display: block;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -59,12 +72,6 @@ h2 {
 
 #submit-btn:hover {
   background-color: rgba(33,120,108,0.5);
-}
-
-.vertalign {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #loading-screen {
