@@ -28,5 +28,6 @@ module.exports = {
   'us_citizen_middle_name': randomLetter().toUpperCase() + '.',
   'us_citizen_date_of_birth': moment(faker.date.past()).format('MM/DD/YYYY'),
   'us_citizen_place_of_birth_town_or_city': faker.address.city(),
-  'us_citizen_place_of_birth_country': faker.address.country()
+  'us_citizen_place_of_birth_country': faker.address.country(),
+  'foreign_born_national_date_authorized_stay_expired': moment(faker.date.past()).format('MM/DD/YYYY')
 }
